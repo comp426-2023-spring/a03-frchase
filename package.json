@@ -16,7 +16,7 @@
     "url": "https://github.com/comp426-2023-spring/a03-frchase/issues"
   },
   "homepage": "https://github.com/comp426-2023-spring/a03-frchase#readme",
-  "bins": {
+  "bin": {
     "node-rps": "./bin/rps-cli.js",
     "node-rpsls": "rpsls-cli.js"
   },
