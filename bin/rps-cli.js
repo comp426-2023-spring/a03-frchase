@@ -5,7 +5,7 @@ import minimist from 'minimist'
 
 const args = minimist(process.argv.slice(2));
 
-const help_message = `Usage: node-rps [SHOT]
+const help = `Usage: node-rps [SHOT]
 Play Rock Paper Scissors (RPS)
   -h, --help      display this help message and exit
   -r, --rules     display the rules and exit
@@ -25,8 +25,8 @@ if(args.r || args.rules) {
     process.exit(0.0);
 }
 
-if (args.h || args.help_message) {
-    console.log(help_message);
+if (args.h || args.help) {
+    console.log(help);
     process.exit(0.0);
 }
 let shoot = args._[0];
@@ -34,7 +34,7 @@ let shoot = args._[0];
 try {
     console.log(JSON.stringify(rps(shoot)));
 } catch (error){
-    console.log(help_message);
+    console.log(help);
     console.log(rules);
     process.exit(1);
 }

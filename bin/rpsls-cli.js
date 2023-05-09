@@ -5,7 +5,7 @@ import minimist from 'minimist'
 
 const args = minimist(process.argv.slice(2));
 
-const help_message = `Usage: node-rpsls [SHOT]
+const help = `Usage: node-rpsls [SHOT]
 Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!
   -h, --help        display this help message and exit
   -r, --rules       display the rules and exit
@@ -32,8 +32,8 @@ if(args.r || args.rules) {
     process.exit(0.0);
 }
 
-if (args.h || args.help_message) {
-    console.log(help_message);
+if (args.h || args.help) {
+    console.log(help);
     process.exit(0.0);
 }
 let shoot = args._[0];
