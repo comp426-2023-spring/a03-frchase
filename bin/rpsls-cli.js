@@ -33,3 +33,22 @@ const rules = `
         - Spock VAPORIZES Rock
         - Rock CRUSHES Scissors
 `;
+
+if(args.r || args.rules) {
+    console.log(rules);
+    process.exit(0.0);
+}
+
+if (args.h || args.help) {
+    console.log(help);
+    process.exit(0.0);
+}
+let shoot = args._[0];
+
+try {
+    console.log(JSON.stringify(rps(shoot)));
+} catch (error){
+    console.log(help);
+    console.log(rules);
+    process.exit(1);
+}
