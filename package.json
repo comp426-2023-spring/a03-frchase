@@ -4,7 +4,7 @@
   "description": "This assignment will help you learn to create an installable Node.js module package. You'll also provide a command line interface with it.",
   "main": "./lib/rpsls.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/comp426-2023-spring/a03-frchase#readme",
   "bin": {
     "node-rps": "./bin/rps-cli.js",
-    "node-rpsls": "rpsls-cli.js"
+    "node-rpsls": "./bin/rpsls-cli.js"
   },
   "dependencies": {
     "minimist": "^1.2.8"
